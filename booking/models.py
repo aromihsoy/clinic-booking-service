@@ -41,7 +41,7 @@ class WorkSchedule(models.Model):
 class Slot(models.Model):
     class Status(models.TextChoices):
         FREE = "FREE", "Свободно"
-        BOOKED = "BOOKED", "Забранировано"
+        BOOKED = "BOOKED", "Забронировано"
 
     doctor = models.ForeignKey(
         "clinics.DoctorProfile",
